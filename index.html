@@ -10,29 +10,33 @@
     <script src="./index.js"></script>
     <form action="">
         <h1>Register</h1>
-        <input type="text" id="userid" placeholder="User ID" required>
-        <input type="text" id="fname" placeholder="First Name" required>
-        <input type="text" id="lname" placeholder="Last Name" required>
-        <label>Gender:</label>
-        <div>
-            <input type="radio" id="male" name="gender" value="male">
-            <label for="male">Male</label>
-            <input type="radio" id="female" name="gender" value="female">
-            <label for="female">Female</label>
-            <input type="radio" id="other" name="gender" value="other">
-            <label for="other">Other</label>
+        <input type="text" id="userid" class="field" placeholder="User ID" required>
+        <input type="text" id="fname" class="field" placeholder="First Name" required>
+        <input type="text" id="lname" class="field" placeholder="Last Name" required>
+        <div class="field" id="genderDiv">
+            <label>Gender:</label>
+            <div>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+            </div>
         </div>
-        <label for="dob">Date of Birth</label>
-        <input type="date" id="dob" required>
-        <input type="email" id="email" placeholder="Email Address" required>
-        <input type="tel" id="phone" placeholder="Mobile Number" required>
-        <input type="password" id="password" placeholder="Password" required>
-        <input type="password" id="confirmPassword" placeholder="Confirm Password">
-        <label>
+        <div class="field" id="dobDiv">
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" required>
+        </div>
+        <input type="email" id="email" class="field" placeholder="Email Address" required>
+        <input type="tel" id="phone" class="field" placeholder="Mobile Number" required>
+        <input type="password" id="password" class="field" placeholder="Password" required>
+        <input type="password" id="confirmPassword" class="field" placeholder="Confirm Password">
+        <label class="field">
             <input type="checkbox" name="terms" required>
             I agree to the <a href="#">Terms and Conditions</a>
         </label>
-        <button type="submit">Submit</button>
+        <button type="submit" class="field" id="submit">Submit</button>
     </form>
 </body>
 </html>
