@@ -52,3 +52,9 @@ button{
     border-radius: 3px;
     margin-left: 3px;
 }
+/* style paragraph for error */
+p{
+    margin-top: -5px;
+    margin-bottom: 5px;
+    color: red;
+}
